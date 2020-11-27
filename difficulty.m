@@ -1,7 +1,7 @@
 function snake_speed = difficulty()
 
-
 success = 0;
+
 difficulty = input('Please choose game difficulty. (Easy / Medium / Hard): ', 's');
 while success == 0
 
