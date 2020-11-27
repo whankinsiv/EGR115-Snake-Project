@@ -10,6 +10,9 @@
 %
 %
 
+% Difficulty Selection
+snake_speed = difficulty()
+
 % Initilize variables.
 score = 0;
 
