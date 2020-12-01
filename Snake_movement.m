@@ -3,9 +3,7 @@ y = ones(1, length(x)) * 10;
 direction = 'a';
 
 while direction ~= 'q'
-    lengthx = length(x);
-    
-    
+
     olddirection = direction;
     figure(gcf)
     direction = get(gcf, 'CurrentCharacter');
