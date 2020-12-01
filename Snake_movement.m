@@ -1,10 +1,7 @@
 x = 10:11;
 y = ones(1, length(x)) * 10;
 direction = 'a';
-if ~isempty(x)
-    line = animatedline(x, y, 'Color', 'g', 'LineWidth', 10);
-    axis([0 20 0 20]);
-end
+
 while direction ~= 'q'
     lengthx = length(x);
     
