@@ -37,7 +37,7 @@ while (test < 4)
         test = 0;
  
 %the if statement for if the location found is not the snake               
-    elseif (map(y,x) == ' ') || (map(y,x) == '#')
+    elseif (map(y,x) == ' ') || (map(y,x) == '#') || 
         x = k;
         y = j;
  
