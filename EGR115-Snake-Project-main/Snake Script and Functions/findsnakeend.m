@@ -11,6 +11,23 @@ first_dir = direction;
 x = column;
 y = row;
 test = 0;
+snake = ['                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '
+         '                              '];
+snake(y,x) = '=';
+
 
 %testing if the final location has been found (loop)
 while (test < 4)
@@ -30,16 +47,15 @@ while (test < 4)
     elseif direction == 's'
         y = y - 1;
     end
-
-%     if (x >= 1) || (x <= 30) || (y <= 15) || (y >= 1)
         
 %checking if the location calculated was the snake or not    
-    if (map(y,x) == '=')
+    if (map(y,x) == '=') && (map(y,x) ~= snake(y,x))
         first_dir = direction;
         test = 0;
+        snake(y,x) = '=';
         
-%the if statement for if the location found is not the snake               
-    elseif (map(y,x) == ' ') || (map(y,x) == '#') || (map(y,x) == 'X')
+%the if statement for if the location found is not the snake
+    else
         x = k;
         y = j;
  
