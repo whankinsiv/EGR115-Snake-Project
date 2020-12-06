@@ -1,5 +1,5 @@
 function [y,x] = findsnakeend(map, row, column, direction)
-%trackthesnake - Finds the tail in the snake game based on the head.
+%findsnakeend - Finds the tail in the snake game based on the head.
 %Tracks down the end of the snake based on the coordinate location of the
 %head of the snake.
 %
